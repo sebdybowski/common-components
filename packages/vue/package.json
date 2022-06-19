@@ -1,0 +1,23 @@
+{
+  "name": "vue-library",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Seb Dybowski <dybowski.seb@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/vue.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "core-library": "^0.0.1",
+    "vue": "^3.2.36"
+  }
+}
