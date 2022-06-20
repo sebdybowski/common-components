@@ -19,7 +19,6 @@ function App() {
         >
           Learn React
         </a>
-
         <ButtonComponent label='Test Button'/>
       </header>
     </div>
