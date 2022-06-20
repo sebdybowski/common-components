@@ -1,9 +1,9 @@
 {
   "name": "react-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
-    "@common-components/react": "^0.0.1",
+    "@common-components/react": "^0.0.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",

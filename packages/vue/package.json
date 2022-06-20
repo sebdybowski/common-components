@@ -1,6 +1,6 @@
 {
   "name": "@common-components/vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "Seb Dybowski <dybowski.seb@gmail.com>",
   "private": false,
@@ -24,7 +24,7 @@
     "tsc": "tsc -p ."
   },
   "dependencies": {
-    "@common-components/core": "^0.0.1",
+    "@common-components/core": "^0.0.2",
     "typescript": "^4.7.4",
     "vue": "^3.2.37"
   },
