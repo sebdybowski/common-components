@@ -33,8 +33,9 @@ export const config: Config = {
       type: 'dist-custom-elements',
     },
     vueOutputTarget({
-      componentCorePackage: '@common-components/core', // i.e.: stencil-library
+      componentCorePackage: '@common-components/core',
       proxiesFile: '../vue/src/components.ts',
+      includeDefineCustomElements: true,
     }),
     angularOutputTarget({
       componentCorePackage: '@common-components/core',

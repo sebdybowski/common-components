@@ -5,7 +5,8 @@
   "author": "Seb Dybowski <dybowski.seb@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/vue.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -14,10 +15,16 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "npm run tsc",
+    "tsc": "tsc -p ."
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@common-components/core": "^0.0.1",
-    "vue": "^3.2.36"
+    "typescript": "^4.7.4",
+    "vue": "^3.2.37"
   }
 }
