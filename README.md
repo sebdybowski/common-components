@@ -25,5 +25,21 @@ npm i -S @common-components/vue
 - <a href="https://github.com/sebdybowski/common-components/tree/main/packages/core/src/components/paragraph">paragraph</a>
 - <a href="https://github.com/sebdybowski/common-components/tree/main/packages/core/src/components/table">table</a>
 
+# local setup
+## prerequisites
+- node `>= v16`
+
+## steps
+- in the root directory run:
+```sh
+npm i
+npx lerna bootstrap
+npx lerna run build
+```
+- to see the demo components navigate to `applications/react-app`, `applications/vue-app` or `applications/angular-app` and execute:
+```sh
+npm run start
+```
+
 # credits
 Big thanks to Cracow University of Economics for motivating me to create this project as part of my Master's Thesis!
