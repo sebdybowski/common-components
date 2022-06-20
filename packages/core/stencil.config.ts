@@ -21,7 +21,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     reactOutputTarget({
-      componentCorePackage: 'react-library',
+      componentCorePackage: '@common-components/core',
       proxiesFile: '../react/src/components/stencil-generated/index.ts',
       includeDefineCustomElements: true,
     }),
@@ -33,11 +33,11 @@ export const config: Config = {
       type: 'dist-custom-elements',
     },
     vueOutputTarget({
-      componentCorePackage: 'vue-library', // i.e.: stencil-library
+      componentCorePackage: '@common-components/core', // i.e.: stencil-library
       proxiesFile: '../vue/src/components.ts',
     }),
     angularOutputTarget({
-      componentCorePackage: 'angular-library',
+      componentCorePackage: '@common-components/core',
       directivesProxyFile: '../angular/projects/angular/src/lib/stencil-generated/components.ts',
       directivesArrayFile: '../angular/projects/angular/src/lib/stencil-generated/index.ts',
     }),

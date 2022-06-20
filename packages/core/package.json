@@ -1,5 +1,5 @@
 {
-  "name": "core-library",
+  "name": "@common-components/core",
   "version": "0.0.1",
   "private": false,
   "description": "Stencil Component Starter",

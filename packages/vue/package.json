@@ -1,5 +1,5 @@
 {
-  "name": "vue-library",
+  "name": "@common-components/vue",
   "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Seb Dybowski <dybowski.seb@gmail.com>",
@@ -17,7 +17,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "core-library": "^0.0.1",
+    "@common-components/core": "^0.0.1",
     "vue": "^3.2.36"
   }
 }
