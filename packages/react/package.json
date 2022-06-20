@@ -47,5 +47,6 @@
   },
   "dependencies": {
     "@common-components/core": "^0.0.1"
-  }
+  },
+  "gitHead": "73e58f6a44a88906d4ddb8c047a1775455731767"
 }
