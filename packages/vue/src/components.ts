@@ -14,9 +14,20 @@ export const ButtonComponent = /*@__PURE__*/ defineContainer<JSX.ButtonComponent
 ]);
 
 
-export const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-component', undefined, [
-  'first',
-  'middle',
-  'last'
+export const HeadingComponent = /*@__PURE__*/ defineContainer<JSX.HeadingComponent>('heading-component', undefined, [
+  'level',
+  'content'
+]);
+
+
+export const LinkComponent = /*@__PURE__*/ defineContainer<JSX.LinkComponent>('link-component', undefined, [
+  'label',
+  'url',
+  'blank'
+]);
+
+
+export const ParagraphComponent = /*@__PURE__*/ defineContainer<JSX.ParagraphComponent>('paragraph-component', undefined, [
+  'content'
 ]);
 

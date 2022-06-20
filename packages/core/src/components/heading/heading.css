@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+h1 {
+  color: aqua;
+}
+
+h2 {
+  color: saddlebrown;
+}
+
+h3 {
+  color: hotpink;
+}
+
+h4 {
+  color: darkcyan;
+}
+
+h5 {
+  color: blueviolet;
+}
+
+h6 {
+  color: khaki;
+}

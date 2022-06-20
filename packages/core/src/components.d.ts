@@ -9,19 +9,17 @@ export namespace Components {
     interface ButtonComponent {
         "label": string;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface HeadingComponent {
+        "content": string;
+        "level": 1 | 2 | 3 | 4 | 5 | 6;
+    }
+    interface LinkComponent {
+        "blank": boolean;
+        "label": string;
+        "url": string;
+    }
+    interface ParagraphComponent {
+        "content": string;
     }
 }
 declare global {
@@ -31,38 +29,52 @@ declare global {
         prototype: HTMLButtonComponentElement;
         new (): HTMLButtonComponentElement;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLHeadingComponentElement extends Components.HeadingComponent, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLHeadingComponentElement: {
+        prototype: HTMLHeadingComponentElement;
+        new (): HTMLHeadingComponentElement;
+    };
+    interface HTMLLinkComponentElement extends Components.LinkComponent, HTMLStencilElement {
+    }
+    var HTMLLinkComponentElement: {
+        prototype: HTMLLinkComponentElement;
+        new (): HTMLLinkComponentElement;
+    };
+    interface HTMLParagraphComponentElement extends Components.ParagraphComponent, HTMLStencilElement {
+    }
+    var HTMLParagraphComponentElement: {
+        prototype: HTMLParagraphComponentElement;
+        new (): HTMLParagraphComponentElement;
     };
     interface HTMLElementTagNameMap {
         "button-component": HTMLButtonComponentElement;
-        "my-component": HTMLMyComponentElement;
+        "heading-component": HTMLHeadingComponentElement;
+        "link-component": HTMLLinkComponentElement;
+        "paragraph-component": HTMLParagraphComponentElement;
     }
 }
 declare namespace LocalJSX {
     interface ButtonComponent {
         "label"?: string;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface HeadingComponent {
+        "content"?: string;
+        "level"?: 1 | 2 | 3 | 4 | 5 | 6;
+    }
+    interface LinkComponent {
+        "blank"?: boolean;
+        "label"?: string;
+        "url"?: string;
+    }
+    interface ParagraphComponent {
+        "content"?: string;
     }
     interface IntrinsicElements {
         "button-component": ButtonComponent;
-        "my-component": MyComponent;
+        "heading-component": HeadingComponent;
+        "link-component": LinkComponent;
+        "paragraph-component": ParagraphComponent;
     }
 }
 export { LocalJSX as JSX };
@@ -70,7 +82,9 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "button-component": LocalJSX.ButtonComponent & JSXBase.HTMLAttributes<HTMLButtonComponentElement>;
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "heading-component": LocalJSX.HeadingComponent & JSXBase.HTMLAttributes<HTMLHeadingComponentElement>;
+            "link-component": LocalJSX.LinkComponent & JSXBase.HTMLAttributes<HTMLLinkComponentElement>;
+            "paragraph-component": LocalJSX.ParagraphComponent & JSXBase.HTMLAttributes<HTMLParagraphComponentElement>;
         }
     }
 }

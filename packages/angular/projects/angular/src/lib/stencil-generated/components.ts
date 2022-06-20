@@ -29,19 +29,61 @@ export class ButtonComponent {
 }
 
 
-export declare interface MyComponent extends Components.MyComponent {}
+export declare interface HeadingComponent extends Components.HeadingComponent {}
 
 @ProxyCmp({
   defineCustomElementFn: undefined,
-  inputs: ['first', 'last', 'middle']
+  inputs: ['content', 'level']
 })
 @Component({
-  selector: 'my-component',
+  selector: 'heading-component',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
-  inputs: ['first', 'last', 'middle']
+  inputs: ['content', 'level']
 })
-export class MyComponent {
+export class HeadingComponent {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface LinkComponent extends Components.LinkComponent {}
+
+@ProxyCmp({
+  defineCustomElementFn: undefined,
+  inputs: ['blank', 'label', 'url']
+})
+@Component({
+  selector: 'link-component',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['blank', 'label', 'url']
+})
+export class LinkComponent {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
+export declare interface ParagraphComponent extends Components.ParagraphComponent {}
+
+@ProxyCmp({
+  defineCustomElementFn: undefined,
+  inputs: ['content']
+})
+@Component({
+  selector: 'paragraph-component',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['content']
+})
+export class ParagraphComponent {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();

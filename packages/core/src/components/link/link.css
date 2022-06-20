@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+
+a {
+  font-size: 14px;
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+  font-size: 20px;
+}
