@@ -11,10 +11,6 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/core/core.esm.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
-  },
   "files": [
     "dist/",
     "loader/"
@@ -39,5 +35,5 @@
     "puppeteer": "^10.0.0"
   },
   "license": "MIT",
-  "gitHead": "73e58f6a44a88906d4ddb8c047a1775455731767"
+  "gitHead": "625494ce852e28d3e82ab158d1afca22d676fea1"
 }
