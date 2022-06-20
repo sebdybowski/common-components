@@ -1,6 +1,6 @@
 {
   "name": "vue-app",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "vite --port 3002",
@@ -13,7 +13,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@common-components/vue": "^0.0.2",
+    "@common-components/vue": "^0.1.0",
     "vue": "^3.2.37",
     "vue-router": "^4.0.14"
   },
