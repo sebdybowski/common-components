@@ -1,11 +1,2 @@
-# `vue`
-
-> TODO: description
-
-## Usage
-
-```
-const vue = require('vue');
-
-// TODO: DEMONSTRATE API
-```
+# @common-components/vue
+Package of Webcomponents adjusted for being used inside fo the Vue project.
