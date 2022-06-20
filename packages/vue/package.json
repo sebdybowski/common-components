@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Seb Dybowski <dybowski.seb@gmail.com>",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "",
   "license": "ISC",
   "main": "lib/index.js",
@@ -19,13 +23,10 @@
     "build": "npm run tsc",
     "tsc": "tsc -p ."
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
     "@common-components/core": "^0.0.1",
     "typescript": "^4.7.4",
     "vue": "^3.2.37"
   },
-  "gitHead": "625494ce852e28d3e82ab158d1afca22d676fea1"
+  "gitHead": "3bbae96b8bee57303a4059a82d5cca8589933112"
 }

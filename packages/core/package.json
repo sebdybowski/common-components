@@ -35,5 +35,8 @@
     "puppeteer": "^10.0.0"
   },
   "license": "MIT",
-  "gitHead": "625494ce852e28d3e82ab158d1afca22d676fea1"
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "3bbae96b8bee57303a4059a82d5cca8589933112"
 }

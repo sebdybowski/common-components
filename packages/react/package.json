@@ -3,6 +3,9 @@
   "sideEffects": false,
   "version": "0.0.1",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "React specific wrapper for component-library",
   "repository": {
     "type": "git",
@@ -48,5 +51,5 @@
   "dependencies": {
     "@common-components/core": "^0.0.1"
   },
-  "gitHead": "625494ce852e28d3e82ab158d1afca22d676fea1"
+  "gitHead": "3bbae96b8bee57303a4059a82d5cca8589933112"
 }
