@@ -40,7 +40,7 @@ export const config: Config = {
     angularOutputTarget({
       componentCorePackage: '@common-components/core',
       directivesProxyFile: '../angular/projects/angular/src/lib/stencil-generated/components.ts',
-      directivesArrayFile: '../angular/projects/angular/src/lib/stencil-generated/index.ts',
+      directivesArrayFile: '../angular/projects/angular/src/lib/stencil-generated/index.ts'
     }),
   ],
 };
