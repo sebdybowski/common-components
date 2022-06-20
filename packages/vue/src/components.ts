@@ -31,3 +31,11 @@ export const ParagraphComponent = /*@__PURE__*/ defineContainer<JSX.ParagraphCom
   'content'
 ]);
 
+
+export const TableComponent = /*@__PURE__*/ defineContainer<JSX.TableComponent>('table-component', undefined, [
+  'tableTitle',
+  'headers',
+  'rows',
+  'sum'
+]);
+

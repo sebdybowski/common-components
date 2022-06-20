@@ -6,7 +6,7 @@ import { Component, Prop, h } from '@stencil/core';
   shadow: false,
   scoped: true
 })
-export class MyComponent {
+export class LinkComponent {
   @Prop() label: string;
   @Prop() url: string;
   @Prop() blank: boolean;

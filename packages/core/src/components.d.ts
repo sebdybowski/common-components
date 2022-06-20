@@ -21,6 +21,12 @@ export namespace Components {
     interface ParagraphComponent {
         "content": string;
     }
+    interface TableComponent {
+        "headers": string;
+        "rows": string;
+        "sum": boolean;
+        "tableTitle": string;
+    }
 }
 declare global {
     interface HTMLButtonComponentElement extends Components.ButtonComponent, HTMLStencilElement {
@@ -47,11 +53,18 @@ declare global {
         prototype: HTMLParagraphComponentElement;
         new (): HTMLParagraphComponentElement;
     };
+    interface HTMLTableComponentElement extends Components.TableComponent, HTMLStencilElement {
+    }
+    var HTMLTableComponentElement: {
+        prototype: HTMLTableComponentElement;
+        new (): HTMLTableComponentElement;
+    };
     interface HTMLElementTagNameMap {
         "button-component": HTMLButtonComponentElement;
         "heading-component": HTMLHeadingComponentElement;
         "link-component": HTMLLinkComponentElement;
         "paragraph-component": HTMLParagraphComponentElement;
+        "table-component": HTMLTableComponentElement;
     }
 }
 declare namespace LocalJSX {
@@ -70,11 +83,18 @@ declare namespace LocalJSX {
     interface ParagraphComponent {
         "content"?: string;
     }
+    interface TableComponent {
+        "headers"?: string;
+        "rows"?: string;
+        "sum"?: boolean;
+        "tableTitle"?: string;
+    }
     interface IntrinsicElements {
         "button-component": ButtonComponent;
         "heading-component": HeadingComponent;
         "link-component": LinkComponent;
         "paragraph-component": ParagraphComponent;
+        "table-component": TableComponent;
     }
 }
 export { LocalJSX as JSX };
@@ -85,6 +105,7 @@ declare module "@stencil/core" {
             "heading-component": LocalJSX.HeadingComponent & JSXBase.HTMLAttributes<HTMLHeadingComponentElement>;
             "link-component": LocalJSX.LinkComponent & JSXBase.HTMLAttributes<HTMLLinkComponentElement>;
             "paragraph-component": LocalJSX.ParagraphComponent & JSXBase.HTMLAttributes<HTMLParagraphComponentElement>;
+            "table-component": LocalJSX.TableComponent & JSXBase.HTMLAttributes<HTMLTableComponentElement>;
         }
     }
 }

@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid pink;
+}
+
+thead, tfoot {
+  color: black;
+  background-color: pink;
+}

@@ -90,3 +90,24 @@ export class ParagraphComponent {
     this.el = r.nativeElement;
   }
 }
+
+
+export declare interface TableComponent extends Components.TableComponent {}
+
+@ProxyCmp({
+  defineCustomElementFn: undefined,
+  inputs: ['headers', 'rows', 'sum', 'tableTitle']
+})
+@Component({
+  selector: 'table-component',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['headers', 'rows', 'sum', 'tableTitle']
+})
+export class TableComponent {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}

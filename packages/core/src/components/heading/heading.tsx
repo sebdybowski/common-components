@@ -6,7 +6,7 @@ import { Component, Prop, h } from '@stencil/core';
   shadow: false,
   scoped: true
 })
-export class MyComponent {
+export class HeadingComponent {
   @Prop() level: 1 | 2 | 3 | 4 | 5 | 6;
   @Prop() content: string;
   

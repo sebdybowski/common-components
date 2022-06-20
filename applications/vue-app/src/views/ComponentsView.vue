@@ -4,6 +4,7 @@ import {
   ParagraphComponent,
   LinkComponent,
   HeadingComponent,
+  TableComponent,
 } from "@common-components/vue";
 </script>
 
@@ -13,6 +14,20 @@ export default {
     showAlert() {
       alert("Hi, I'm a button alert!");
     },
+  },
+  data() {
+    return {
+      rows1: JSON.stringify([
+        ["one", "two"],
+        ["three", "four"],
+      ]),
+      headers1: JSON.stringify(["header1", "header2"]),
+      rows2: JSON.stringify([
+        [1, 5],
+        [8, 14],
+      ]),
+      headers2: JSON.stringify(["header1", "header2"]),
+    };
   },
 };
 </script>
@@ -46,6 +61,15 @@ export default {
     <HeadingComponent content="Level 5 Heading" :level="5" />
     <HeadingComponent content="Level 6 Heading" :level="6" />
     <br />
+
+    <h2>Table component</h2>
+    <TableComponent tableTitle="Test table" :headers="headers1" :rows="rows1" />
+    <TableComponent
+      tableTitle="Test sumarizing table"
+      :headers="headers2"
+      :rows="rows2"
+      :sum="true"
+    />
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { ButtonComponent, ParagraphComponent, LinkComponent, HeadingComponent } from '@common-components/react';
+import { ButtonComponent, ParagraphComponent, LinkComponent, HeadingComponent, TableComponent } from '@common-components/react';
 
 const LOREM_IPSUM = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra at erat et volutpat. Praesent sollicitudin vel nulla sit amet sagittis. Donec rutrum sem sit amet massa sodales mollis. In suscipit auctor ante. Quisque eget interdum felis. Nunc eu consequat tortor. Mauris bibendum purus eu mauris venenatis rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec eleifend imperdiet massa, ut ultrices est eleifend nec. Ut in ullamcorper augue. Aenean ultrices ullamcorper dignissim. Nulla commodo molestie tincidunt.';
 
@@ -42,6 +42,26 @@ function App() {
         <HeadingComponent content="Level 5 Heading" level={5}/>
         <HeadingComponent content="Level 6 Heading" level={6}/>
         <br/>
+
+        <h2>Table component</h2>
+        <TableComponent
+          tableTitle="Test table"
+          headers={JSON.stringify(['header1', 'header2'])}
+          rows={JSON.stringify([
+            ['one', 'two'],
+            ['three', 'four'],
+          ])}
+        />
+
+        <TableComponent
+          tableTitle="Test sumarizing table"
+          headers={JSON.stringify(['header1', 'header2'])}
+          rows={JSON.stringify([
+            [1, 5],
+            [8, 14],
+          ])}
+          sum
+        />
       </header>
     </div>
   );

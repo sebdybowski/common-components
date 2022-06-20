@@ -5,5 +5,6 @@ export const DIRECTIVES = [
   d.ButtonComponent,
   d.HeadingComponent,
   d.LinkComponent,
-  d.ParagraphComponent
+  d.ParagraphComponent,
+  d.TableComponent
 ];
