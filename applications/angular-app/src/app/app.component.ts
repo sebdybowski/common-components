@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
+
+  public showAlert() {
+    alert('Hi, I\'m a button alert!');
+  }
 }
