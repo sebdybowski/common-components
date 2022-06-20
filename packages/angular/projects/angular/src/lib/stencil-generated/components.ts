@@ -8,6 +8,27 @@ import { Components } from '@common-components/core';
 
 
 
+export declare interface ButtonComponent extends Components.ButtonComponent {}
+
+@ProxyCmp({
+  defineCustomElementFn: undefined,
+  inputs: ['label']
+})
+@Component({
+  selector: 'button-component',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '<ng-content></ng-content>',
+  inputs: ['label']
+})
+export class ButtonComponent {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
+
 export declare interface MyComponent extends Components.MyComponent {}
 
 @ProxyCmp({

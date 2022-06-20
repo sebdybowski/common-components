@@ -8,6 +8,11 @@ import type { JSX } from '@common-components/core';
 
 
 
+export const ButtonComponent = /*@__PURE__*/ defineContainer<JSX.ButtonComponent>('button-component', undefined, [
+  'label'
+]);
+
+
 export const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-component', undefined, [
   'first',
   'middle',
