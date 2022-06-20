@@ -1,7 +1,7 @@
 {
   "name": "vue-app",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
   "scripts": {
     "start": "vite --port 3002",
     "build": "vue-tsc --noEmit && vite build",
